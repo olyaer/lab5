@@ -1,0 +1,16 @@
+s = input()
+
+result= ""
+count= ""
+
+for ch in s:
+    if ch.isdigit():
+        count += ch
+    else:
+        if count == "":
+            result += ch
+        else:
+            result += ch*int(count)
+        count = ""
+
+print(result)
