@@ -1,0 +1,7 @@
+numbers=input("Числа:")
+
+numbers=list(map(int,numbers.split()))
+
+s=sum(numbers)
+
+print(s)
